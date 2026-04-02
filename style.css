@@ -301,7 +301,7 @@ html {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #2ecc71;
-  animation: typing 2s steps(20) forwards, blink 1s infinite;
+  animation: fadeUp 1s ease forwards;
   font-size: 1.5rem;
 }
 
@@ -310,20 +310,15 @@ html {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #2ecc71;
-  animation: typing 3s steps(20) infinite, blink 2s infinite;
+ animation: fadeUp 3s ease forwards;
   animation-delay: 2s;
   
 }
 
-@keyframes typing {
+@keyframes fadeUp {
   to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
