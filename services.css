@@ -1,0 +1,68 @@
+/* HERO */
+.services-hero {
+  position: relative;
+  height: 60vh;
+  background: url('photos/WhatsApp\ Image\ 2026-03-20\ at\ 5.12.19\ PM\ \(1\).jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16,185,129,0.6);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* SERVICES */
+.services-list {
+  max-width: 800px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+/* SINGLE SERVICE */
+.service {
+  margin-bottom: 80px;
+}
+
+.service h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #64748B;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.service-btn {
+  padding: 10px 20px;
+  background: #10B981;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* CTA */
+.services-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #46d381;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .service h2 {
+    font-size: 22px;
+  }
