@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <title>BestHaven Home Care Inc</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="png"
      href="photos/logo.png">
 </head>
 <body>
   <script src="script.js"></script>
+  <script src="menu.js"></script>
    <script src="section.js"></script>
   <div class="menu-overlay"></div>
   <a href="https://wa.me/+1 587 930 3919" class="whatsapp-btn" target="_blank">
   <img src="svg/whatsapp-icon.svg">
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </a>
 
   <!-- NAVBAR -->
@@ -50,17 +51,92 @@
       <button>Get Started</button>
     </div>
   </section>
-   <!-- SERVICES -->
-  <section class="services" id="services">
+
+<section class="about-premium">
+
+
+  <section class="motivation-quote">
+  <div class="quote-wrapper">
+    <p class="quote-text">"Compassion is at the heart of every great service."</p>
+    <span class="quote-author">— BestHaven Home Care —</span>
+  </div>
+</section>
+
+  <div class="about-wrapper">
+
+   
+
+      <!-- FLOATING GLASS CARDS -->
+      <div class="glass-card card-1">
+        <h3>5+</h3>
+        <p>Years Experience</p>
+      </div>
+
+      <div class="glass-card card-2">
+        <h3>100+</h3>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+ <!-- IMAGE SIDE -->
+    <div class="about-image-box">
+      <img src="photos/homecare.jpg" alt="Care">
+    <!-- TEXT SIDE -->
+    <div class="about-text">
+
+      <h2 class="reveal">About Our Care</h2>
+
+      <p class="reveal delay">
+        We provide compassionate and professional home care services designed 
+        to improve quality of life and independence.
+      </p>
+
+      <!-- COUNTERS -->
+      <div class="stats">
+        <div class="stat reveal">
+          <h3 class="counter" data-target="10">5+</h3>
+          <p>Years Experience</p>
+        </div>
+
+        <div class="stat reveal">
+          <h3 class="counter" data-target="500">100+</h3>
+          <p>Clients Served</p>
+        </div>
+
+        <div class="stat reveal">
+          <h3 class="counter" data-target="24">24</h3>
+          <p>24/7 Support</p>
+        </div>
+      </div>
+
+      <!-- SOCIAL ICONS -->
+      <div class="socials">
+        <a href="https://www.instagram.com/besthavenhomecare/#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61577432894459"><i class="fab fa-facebook"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  
+   <section class="services-premium" id="services">
+  <!-- Floating background shapes -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
   <div class="services-header">
     <h2>Our Services</h2>
     <p>Compassionate care designed for comfort, independence, and peace of mind.</p>
   </div>
 
-  <div class="services-grid">
-
-    <!-- CARD -->
-    <div class="service-card">
+  <div class="services-list">
+    <!-- Visible services -->
+    <div class="service reveal slide-left">
       <div class="icon-box">
         <img src="svg/charity-donation-hand-love-icon.svg" alt="">
       </div>
@@ -68,7 +144,7 @@
       <p>Providing emotional support and meaningful connection.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service reveal slide-right">
       <div class="icon-box">
         <img src="svg/automobile-icon.svg" alt="">
       </div>
@@ -76,7 +152,7 @@
       <p>Safe rides for appointments, errands, and daily needs.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service reveal slide-left">
       <div class="icon-box">
         <img src="svg/fmcg-products-icon.svg" alt="">
       </div>
@@ -84,7 +160,8 @@
       <p>Helping with shopping and everyday essential tasks.</p>
     </div>
 
-    <div class="service-card">
+    <!-- Hidden services -->
+    <div class="service reveal slide-right more-service">
       <div class="icon-box">
         <img src="svg/heart-care-icon.svg" alt="">
       </div>
@@ -92,31 +169,17 @@
       <p>Support with hygiene, dressing, and daily routines.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service reveal slide-left more-service">
       <div class="icon-box">
         <img src="svg/breakfast-icon.svg" alt="">
       </div>
       <h3>Meal Preparation</h3>
       <p>Nutritious meals prepared with care and attention.</p>
     </div>
-
-    <div class="service-card">
-      <div class="icon-box">
-        <img src="svg/cleaning-icon.svg" alt="">
-      </div>
-      <h3>Light Housekeeping</h3>
-      <p>Maintaining a clean and comfortable home.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon-box">
-        <img src="svg/home-care-icon.svg" alt="">
-      </div>
-      <h3>Live-in Care</h3>
-      <p>24/7 support and supervision in your home.</p>
-    </div>
-
   </div>
+
+  <!-- More button -->
+  <a href="service.html" class="more-btn" id="show-more">More Services</a>
 </section>
 
 <section class="why">
