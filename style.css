@@ -1,5 +1,5 @@
 :root {
-  --primary: #3B82F6;
+  --primary: #f9f9f9;
   --bg: #F8FAFC;
   --text: #1E293B;
   --card: #FFFFFF;
@@ -32,22 +32,27 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 12px 25px;
+  padding: 15px 30px;
 
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
+  background-color: #ffffff; /* pure white */
+  border-radius: 60px;
 
-  border-radius: 50px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 
   z-index: 1000;
 }
 
-/* LOGO */
+/* LOGO (BIGGER BUT CLEAN) */
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 400px;   /* increased size */
   object-fit: contain;
+  transition: 0.3s ease;
+  font-size: 2.5rem;
+}
+
+/* NICE HOVER EFFECT */
+.logo:hover {
+  transform: scale(1.05);
 }
 
 /* NAV LINKS DESKTOP */
@@ -58,7 +63,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(3, 120, 79);
   font-weight: 500;
   position: relative;
 }
@@ -92,7 +97,7 @@ body {
 .menu-btn span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: rgb(4, 147, 80);
   transition: 0.4s;
 }
 
@@ -120,11 +125,13 @@ body {
   .navbar {
     width: 95%;
     padding: 10px 15px;
+    background-color: #ffffff;
   }
 
   .logo {
-    width: 55px;
-    height: 55px;
+    width: 100px;
+    height: 60px;
+    font-size: 3.5rem;
   }
 
   /* FULLSCREEN MENU */
@@ -136,7 +143,7 @@ body {
     width: 50%;
     height: 50vh;
 
-    background: rgba(162, 203, 247, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
 
     display: flex;
@@ -147,17 +154,17 @@ body {
     gap: 30px;
 
     transition: all 0.4s ease;
-    opacity: 0;
+    opacity: 1;
 
     z-index: 1500;
   }
 
   .nav-links a {
     font-size: 22px;
-    color: #1E293B;
+    color: #036a3c;
 
     transform: translateY(20px);
-    opacity: 0;
+    opacity: 1;
     transition: 0.3s;
   }
 
@@ -185,6 +192,7 @@ body {
 
   .navbar {
     top: 10px;
+    border-color: #ffffff;
   }
 
   .nav-links a {
@@ -547,7 +555,7 @@ body {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  background-image: url('photos/d119716b655abfde4557c3a3f4d4f8a49489a34a-5120x3328.jpg'); /* image behind */
+  background-image: url('photos/WhatsApp\ Image\ 2026-03-20\ at\ 5.12.19\ PM.jpeg'); /* image behind */
   background-size: cover;
   background-position: center;
 }
